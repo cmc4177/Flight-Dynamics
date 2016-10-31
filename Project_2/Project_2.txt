@@ -1,0 +1,33 @@
+\noindent The equation for the contribution of pitch due to the wing is: \\
+
+ $C_{m_{w}} = C_{m_{0_w}} + C_{m_{\alpha_w}}$\\
+\\
+ Where $C_{m_{0_w}} = C_{m_{ac_w}}+C_{L_{0_w}}\left(\dfrac{x_{cg}}{\bar{c}}-\dfrac{x_{ac}}{\bar{c}})\right)$ and $C_{m_{\alpha_w}} = C_{L_{\alpha_w}}\left(\dfrac{x_{cg}}{\bar{c}}-\dfrac{x_{ac}}{\bar{c}})\right)$\\
+\\ The wing contribution to the pitching moment is:\\
+ 
+ $\fbox{$C_{m_{\alpha_w}} = 0.002915$ (1/deg)}$ and $\fbox{$C_{m_{0_w}} = \fbox{-0.0997}$}\hspace*{\fill} \circled{a} \square$\\
+\\
+The equation for the contribution of pitch due to the tail is: \\
+
+ $C_{m_{t}} = C_{m_{0_t}} + C_{m_{\alpha_t}}$\\
+\\
+ Where $C_{m_{0_t}} = \eta V_HC_{L_{\alpha_t}}\left(\varepsilon+i_w-i_t\right)$ and $C_{m_{\alpha_t}} = -\eta V_HC_{L_{\alpha_t}}\left(1-\dfrac{d\varepsilon}{d\alpha}\right)$\\
+The tail contribution to the pitching moment is:\\
+ 
+ $\fbox{$C_{m_{\alpha_t}} = -0.02008$ (1/deg)}$ and $\fbox{$C_{m_{0_t}} = 0.1685$}\hspace*{\fill} \circled{b} \square$\\
+\\
+The equation for the contribution of pitch due to the fuselage is: \\
+
+ $C_{m_{f}} = C_{m_{0_f}} + C_{m_{\alpha_f}}$\\
+\\
+ Where $C_{m_{0_f}} = \dfrac{k_2-k_1}{36.5S\bar{c}}*\sum_{x=0}^{x=l_f} w^2_f (\alpha_{0_w} + i_f)\Delta x$ and $C_{m_{\alpha_t}} = \dfrac{1}{36.5S\bar{c}}*\sum_{x=0}^{x=l_f} w^2_f \dfrac{\partial \varepsilon}{\partial \alpha}\Delta x$\\
+\\
+The fuselage contribution to the pitching moment is:\\
+ 
+ $\fbox{$C_{m_{\alpha_f}} = 0.007855$ (1/deg)}$ and $\fbox{$C_{m_{0_f}} = -0.0164$}\hspace*{\fill} \circled{c} \square$\\
+\\
+The total contribution to the pitching moment is (due to roundoff error):\\
+ 
+ $\fbox{$C_{m_{\alpha_{total}}} = -0.009311$ (1/deg)}$ and $\fbox{$C_{m_{0_{total}}} = 0.05243$}\hspace*{\fill} \circled{d} \square$\\
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_1.eps} $\hspace*{\fill} \circled{e} \square$\end{figure}
+The stick fixed neutral point is (due to roundoff): 0.4097 $\hspace*{\fill} \circled{f} \square$

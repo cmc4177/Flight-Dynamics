@@ -1,0 +1,82 @@
+\documentclass[12pt,letterpaper,titlepage,oneside]{article}
+\usepackage[pctexps]{graphicx} %package for inserting pictures(.png, .jpg, etc.)
+\usepackage{fancyhdr} %allows better modification of heading
+\usepackage{caption} %used to position captions around images
+\usepackage{subcaption} %used to position captions inside a group of images
+\usepackage{float} %used for the positioning of images, tables, etc.
+
+%Initialize Math packages for additional symbols, fonts, etc
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%\usepackage{adjustbox,lipsum}
+%Initiliaze IEEE array
+\usepackage[retainorgcmds]{IEEEtrantools}
+%\usepackage{pdflscape} %allows changing of landscape of entire page
+
+%Allows the wrapping of text around Figures
+\usepackage{wrapfig}
+
+%Allows appending of the file with pdf documents
+\usepackage{pdfpages}
+
+%Matlab Code Prettifier with Line Numbering
+\usepackage[numbered]{matlab-prettifier}
+
+%Allows Creation of Hyperlinks inside the document
+\usepackage[pdftex,colorlinks=true,urlcolor=cyan]{hyperref}
+
+%Creates the Diameter Symbol
+\usepackage{wasysym}
+
+%For the proper circling of numbers
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+	\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+%For the Negation of Numbers/Text diagonally
+\usepackage{xparse}
+%usepackage{tikz}
+
+\DeclareDocumentCommand{\hcancel}{mO{0pt}O{0pt}O{0pt}O{0pt}}{%
+	\tikz[baseline=(tocancel.base)]
+ {
+		\node[inner sep=0pt, outer 
+ sep=0pt] (tocancel) {#1};
+		\draw[black]
+($(tocancel.south west) + (#2,#2)$)-
+ - ($(tocancel.north east)+(#4,#5)$);
+	}%
+ }%
+
+\pagestyle{fancy}
+% with this we ensure that the chapter and section
+% headings are in lowercase.
+\renewcommand{\sectionmark}[1]{%
+	\markright{#1}}
+\fancyhf{} % delete current header and footer
+%\fancyhead[R]{\bfseries Page \thepage}
+\fancyhead[L]{\bfseries\rightmark}
+\fancyfoot[C]{\bfseries \today \hspace*{\fill} Flight Dynamics \hspace*{\fill} Page \thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt} % space for the rule
+\fancypagestyle{plain}{%
+\fancyhead{} % get rid of headers on plain pages
+\renewcommand{\headrulewidth}{0pt} %
+}
+\renewcommand{\headheight}{15.0pt}
+
+\title{\huge Control Systems\\ \normalsize MECE 410-01\\ Instructor: Dr. Agamemnon Crassidis\\ \Large Project \# 2}
+\author{Clair Cunningham %In Collaboration with
+}
+\begin{document}
+\sectionmark{Project \# 2\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 1}
+\input{Project_2.txt}
+\newpage
+\lstinputlisting[style=Matlab-editor]{Project_2.m}
+\end{document}
+%http://www.tlhiv.org/ltxpreview/
+%http://en.wikibooks.org/wiki/LaTeX/Importing_Graphics

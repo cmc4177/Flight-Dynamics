@@ -1,0 +1,16 @@
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 1}
+The figure below while not the exact same as the solution given has variance in the 10$^{-6}$ place only, a small number. Even if the model output is not exactly the same it still remains within a very close trim condition given no input. The rest of the solutions for the different problems follow with no variance from the solution given.\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Figure_1.eps}
+ \caption{Problem 1 Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 2}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Figure_2.eps}
+ \caption{Problem 2 Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 3}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Figure_3.eps}
+ \caption{Problem 3 Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 4}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Figure_4.eps}
+ \caption{Problem 4 Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage

@@ -1,0 +1,171 @@
+clear all; close all; clc
+%Project 1
+%Problem 1
+fid = fopen('Project_2.txt','w+');
+
+%Business Jet Aircraft Data
+station = [1 2 3 4 5 6 7 8 9 10 11 12 13];
+dx = [2.6 2.6 2.2 2.2 3.4 3.4 3.4 3.4 14.6 5.2 5.2 5.2 5.2];
+wf = [2.5 4.2 5.5 6.3 6.6 7.2 7.2 7.2 7.2 6.6 5.4 3.8 2.1];
+i_f = [-3 -3 -10 -10 0 0 0 0 0 0 0 0 -4];
+%
+
+% Wing Characteristics
+S = 542.5; % ft^2
+b = 53.75; % ft
+cbar = 10.93; % ft
+c_m_ac_w = -0.1;
+c_l_alpha_w = 0.0583; % 1/deg
+c_l_0_w = 0.006; % ---
+i_w = 0; % deg
+alpha_0_w = -1; % deg
+
+% Tail Characteristics
+S_t = 149; % ft^2
+b_t = 24.75; % ft
+cbar_t = 6.5; % ft
+c_l_alpha_t = 0.05934; % 1/deg
+i_t = -5; % deg
+eta = 0.95;
+l_t = 23.6; % ft
+
+% Fuselage Characteristics
+l_f = 58.6; % ft
+d_max = 7.2; % ft
+l_h = 14.2; % ft
+
+% Aircraft Characteristics
+xcg = 0.25*cbar; % ft
+xac = 0.2*cbar; % ft 
+
+%Part a; Wing Contribution to the Pitching Moment
+Cm_alpha_w = c_l_alpha_w*(xcg/cbar-xac/cbar); % 1/deg (given answer 0.167 (1/rad) = 0. (1/deg))
+a_Cm_alpha_w = 0.167*(pi/180);; % 1/deg
+Cm_0_w = c_m_ac_w+c_l_0_w*(xcg/cbar-xac/cbar); % given answer -0.0997
+a_Cm_0_w = -0.0997;
+fprintf(fid,'\\noindent The equation for the contribution of pitch due to the wing is: \\\\\n');
+fprintf(fid,'\n $C_{m_{w}} = C_{m_{0_w}} + C_{m_{\\alpha_w}}$\\\\\n');
+fprintf(fid,'\\\\\n Where $C_{m_{0_w}} = C_{m_{ac_w}}+C_{L_{0_w}}\\left(\\dfrac{x_{cg}}{\\bar{c}}-\\dfrac{x_{ac}}{\\bar{c}})\\right)$ and $C_{m_{\\alpha_w}} = C_{L_{\\alpha_w}}\\left(\\dfrac{x_{cg}}{\\bar{c}}-\\dfrac{x_{ac}}{\\bar{c}})\\right)$\\\\\n');
+fprintf(fid,'\\\\ The wing contribution to the pitching moment is:\\\\\n \n $\\fbox{$C_{m_{\\alpha_w}} = %.4g$ (1/deg)}$ and $\\fbox{$C_{m_{0_w}} = \\fbox{%.4g}$}\\hspace*{\\fill} \\circled{a} \\square$\\\\\n',Cm_alpha_w,Cm_0_w);
+% if Cm_alpha_w == a_Cm_alpha_w
+% 	fprintf(fid,'\\\\ The $C_{m_{\\alpha_w}}$ contributions matches the answer given.\\\\\n');
+% 	else
+% 	fprintf(fid,'\\\\ The $C_{m_{\\alpha_w}}$ calculated is %.4g and the answer is %.4g\\\\\n',Cm_alpha_w,a_Cm_alpha_w);
+% end
+% if Cm_0_w == a_Cm_0_w
+% 	fprintf(fid,'\\\\ The $C_{m_{0_w}}$ contributions matches the answer given.\\\\\n');
+% 	else
+% 	fprintf(fid,'The $C_{m_{0_w}}$ calculated is %.4g and the answer is %.4g\\\\\n',Cm_0_w,a_Cm_0_w);
+% end
+
+% Part b; Tail contribution to the pitching moment
+AR_w = b^2/S;
+de_over_dalpha = (2*c_l_alpha_w)/(pi*AR_w)*(180/pi);
+VH = (S_t/S)*(l_t/cbar);
+Cm_alpha_t = -eta*VH*c_l_alpha_t*(1-de_over_dalpha); % 1/deg (given answer -1.1506 (1/rad))
+a_Cm_alpha_t = -1.1506*(pi/180); % 1/deg;
+eps0 = (2*c_l_0_w)/(pi*AR_w)*(180/pi); % deg
+Cm_0_t = eta*VH*c_l_alpha_t*(eps0+i_w-i_t);
+a_Cm_0_t = 0.1685;
+fprintf(fid,'\\\\\nThe equation for the contribution of pitch due to the tail is: \\\\\n');
+fprintf(fid,'\n $C_{m_{t}} = C_{m_{0_t}} + C_{m_{\\alpha_t}}$\\\\\n');
+fprintf(fid,'\\\\\n Where $C_{m_{0_t}} = \\eta V_HC_{L_{\\alpha_t}}\\left(\\varepsilon+i_w-i_t\\right)$ and $C_{m_{\\alpha_t}} = -\\eta V_HC_{L_{\\alpha_t}}\\left(1-\\dfrac{d\\varepsilon}{d\\alpha}\\right)$\\\\\n');
+fprintf(fid,'The tail contribution to the pitching moment is:\\\\\n \n $\\fbox{$C_{m_{\\alpha_t}} = %.4g$ (1/deg)}$ and $\\fbox{$C_{m_{0_t}} = %.4g$}\\hspace*{\\fill} \\circled{b} \\square$\\\\\n',Cm_alpha_t,Cm_0_t);
+% if Cm_alpha_t == a_Cm_alpha_t
+% 	fprintf(fid,'\\\\The $C_{m_{\\alpha_t}}$ contributions matches the answer given.\\\\\n');
+% 	else
+% 	fprintf(fid,'\\\\The $C_{m_{\\alpha_t}}$ calculated is %.4g and the answer is %.4g\\\\\n',Cm_alpha_t,a_Cm_alpha_t);
+% end
+% if Cm_0_t == a_Cm_0_t
+% 	fprintf(fid,'The $C_{m_{0_t}}$ contributions matches the answer given.\\\\\n');
+% 	else
+% 	fprintf(fid,'The $C_{m_{0_t}}$ calculated is %.4g and the answer is %.4g\\\\\n',Cm_0_t,a_Cm_0_t);
+% end
+
+%Part c; Fuselage contribution to the pitching moment
+sum_cm_alpha_f = 0;
+for i=10:length(station)
+	if i == 10
+	deu(i-9) = (dx(i)/2)/l_h*(1-de_over_dalpha);
+	else
+	deu(i-9) = (dx(i)/2+sum(dx(10:i)))/l_h*(1-de_over_dalpha);
+    end
+end
+%deu_over_dalpha = [1.1 1.125 1.150 1.175 1.20 1.40 1.45 3.40 0];
+deu_over_dalpha = [1.115 1.125 1.15 1.2 1.25 1.35 1.55 3.2 0]; 
+deu_over_dalpha = cat(2,deu_over_dalpha,deu);
+for i=1:length(station)
+	sum_cm_alpha_f = sum_cm_alpha_f + wf(i)^2*deu_over_dalpha(i)*dx(i);
+end
+Cm_alpha_f = (1/(36.5*S*cbar))*sum_cm_alpha_f;
+a_Cm_alpha_f = 0.0076; % 1/deg
+
+dk2k1 = 0.9; %approximately
+sum_cm_0_f = 0;
+for i=1:length(station)
+%	if i == 9
+%		sum_cm_0_f = sum_cm_0_f + 0;
+%	else
+		sum_cm_0_f = sum_cm_0_f + wf(i)^2*(alpha_0_w+i_f(i))*dx(i);
+%	end
+end
+Cm_0_f = ((dk2k1)/(36.5*S*cbar))*sum_cm_0_f;
+a_Cm_0_f = -0.0164;
+
+fprintf(fid,'\\\\\nThe equation for the contribution of pitch due to the fuselage is: \\\\\n');
+fprintf(fid,'\n $C_{m_{f}} = C_{m_{0_f}} + C_{m_{\\alpha_f}}$\\\\\n');
+fprintf(fid,'\\\\\n Where $C_{m_{0_f}} = \\dfrac{k_2-k_1}{36.5S\\bar{c}}*\\sum_{x=0}^{x=l_f} w^2_f (\\alpha_{0_w} + i_f)\\Delta x$ and $C_{m_{\\alpha_t}} = \\dfrac{1}{36.5S\\bar{c}}*\\sum_{x=0}^{x=l_f} w^2_f \\dfrac{\\partial \\varepsilon}{\\partial \\alpha}\\Delta x$\\\\\n');
+fprintf(fid,'\\\\\nThe fuselage contribution to the pitching moment is:\\\\\n \n $\\fbox{$C_{m_{\\alpha_f}} = %.4g$ (1/deg)}$ and $\\fbox{$C_{m_{0_f}} = %.4g$}\\hspace*{\\fill} \\circled{c} \\square$\\\\\n',Cm_alpha_f,Cm_0_f);
+% if Cm_alpha_f == a_Cm_alpha_f
+% 	fprintf(fid,'\\\\The $C_{m_{\\alpha_f}}$ contributions matches the answer given.\\\\\n');
+% 	else
+% 	fprintf(fid,'\\\\The $C_{m_{\\alpha_f}}$ calculated is %.4g and the answer is %.4g\\\\\n',Cm_alpha_f,a_Cm_alpha_f);
+% end
+% if Cm_0_f == a_Cm_0_f
+% 	fprintf(fid,'The $C_{m_{0_f}}$ contributions matches the answer given.\\\\\n');
+% 	else
+% 	fprintf(fid,'The $C_{m_{0_f}}$ calculated is %.4g and the answer is %.4g\\\\\n',Cm_0_f,a_Cm_0_f);
+% end
+
+% Part d; Total pitching moment
+total_Cm_alpha = (Cm_alpha_w*(180/pi)+Cm_alpha_t*(180/pi)+Cm_alpha_f*(180/pi))*(pi/180);
+a_total_Cm_alpha = -0.548*(pi/180); % 1/deg
+total_Cm_0 = Cm_0_w+Cm_0_t+Cm_0_f;
+a_total_Cm_0 = 0.05243;
+fprintf(fid,'\\\\\nThe total contribution to the pitching moment is (due to roundoff error):\\\\\n \n $\\fbox{$C_{m_{\\alpha_{total}}} = %.4g$ (1/deg)}$ and $\\fbox{$C_{m_{0_{total}}} = %.4g$}\\hspace*{\\fill} \\circled{d} \\square$\\\\\n',total_Cm_alpha,total_Cm_0);
+% if total_Cm_alpha == a_total_Cm_alpha
+% 	fprintf(fid,'\\\\The $C_{m_{\\alpha_w}}$ contributions matches the answer given.\\\\\n');
+% 	else
+% 	fprintf(fid,'\\\\The $C_{m_{\\alpha_w}}$ calculated is %.4g and the answer is %.4g\\\\\n',total_Cm_alpha,a_total_Cm_alpha);
+% end
+% if total_Cm_0 == a_total_Cm_0
+% 	fprintf(fid,'The $C_{m_{0_}}$ contributions matches the answer given.\\\\\n');
+% 	else
+% 	fprintf(fid,' $C_{m_{0_w}}$ calculated is %.4g and the answer is %.4g\\\\\n',total_Cm_0,a_total_Cm_0);
+% end
+%Part e; plot various contributions and total pitch moment versus alpha
+alpha = [0:1:10];
+for i=1:11
+    cm_w(i) = Cm_0_w + Cm_alpha_w*alpha(i);
+    cm_t(i) = Cm_0_t + Cm_alpha_t*alpha(i);
+    cm_f(i) = Cm_0_f + Cm_alpha_f*alpha(i);
+    cm(i) = total_Cm_0 + total_Cm_alpha*alpha(i);
+end
+
+figure(1)
+plot(alpha,cm_w,alpha,cm_t,alpha,cm_f,alpha,cm,'LineWidth',3.0)
+title('Part E: Pitch Moment against Angle of Attack');
+ylabel('Pitch Moment');
+xlabel('Angle-of-Attack (deg)');
+legend('Wing Contribution','Tail Contribution', 'Fuselage Contribution', 'Total Moment');
+ax = gca;
+ax.FontSize = 16;
+
+name = 'Figure_1';
+print(figure(1),'-depsc',name);
+fprintf(fid,'\\begin{figure}[H]\\centering\\includegraphics[keepaspectratio=true,height=.45\\textheight,width=1\\textwidth]{%s.eps} $\\hspace*{\\fill} \\circled{e} \\square$\\end{figure}\n',name);
+
+% Part f
+xnp = xac/cbar - Cm_alpha_f/c_l_alpha_w + eta*VH*(c_l_alpha_t)/(c_l_alpha_w)*(1-de_over_dalpha);
+fprintf(fid,'The stick fixed neutral point is (due to roundoff): %.4g $\\hspace*{\\fill} \\circled{f} \\square$',xnp);
+fclose(fid);

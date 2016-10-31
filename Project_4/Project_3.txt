@@ -1,0 +1,48 @@
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 1}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Trim_Simulation.eps}
+ \caption{Problem Trim Simulation Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 1}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Trim_Simulation_Derivative.eps}
+ \caption{Problem Trim Simulation Derivative Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 1}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Trim_Simulation_Quaternion_Model.eps}
+ \caption{Problem Trim Simulation Quaternion Model Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 2}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Elevator_Input_Simulation.eps}
+ \caption{Problem Elevator Input Simulation Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 2}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Elevator_Input_Simulation_Derivative.eps}
+ \caption{Problem Elevator Input Simulation Derivative Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 2}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Elevator_Input_Simulation_Quaternion_Model.eps}
+ \caption{Problem Elevator Input Simulation Quaternion Model Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 3}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Aileron_Input_Simulation.eps}
+ \caption{Problem Aileron Input Simulation Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 3}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Aileron_Input_Simulation_Derivative.eps}
+ \caption{Problem Aileron Input Simulation Derivative Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 3}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Aileron_Input_Simulation_Quaternion_Model.eps}
+ \caption{Problem Aileron Input Simulation Quaternion Model Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 3}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Rudder_Input_Simulation.eps}
+ \caption{Problem Rudder Input Simulation Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 3}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Rudder_Input_Simulation_Derivative.eps}
+ \caption{Problem Rudder Input Simulation Derivative Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 3\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 3}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Rudder_Input_Simulation_Quaternion_Model.eps}
+ \caption{Problem Rudder Input Simulation Quaternion Model Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage

@@ -1,0 +1,21 @@
+The poles of the longitudinal system are -0.0045932+0.070993i, -0.0045932-0.070993i, -0.75016+1.2508i, and -0.75016-1.2508i.\\
+The natural frequencies of the longitudinal system  are 0.07114, 0.07114, 1.458, and 1.45847.\\
+The damping ratios of the longitudinal system are 0.06456, 0.06456.\\
+The damping ratios of the longitudinal system are 0.5143, 0.5143.\\
+The poles of the lateral system are -0.025551, -0.40833+2.75i, -0.40833-2.75i, and -2.8232.\\
+The natural frequencies of the lateral system  are 0.02555, 2.78, 2.78, and 2.82318.\\
+The damping ratios of the lateral system are 1, 0.1469, 0.1469, and 1.\hspace*{\fill} \circled{b}\\
+\\
+The following all show the same story, that the the lsim results and the simulink results \textbf{MATCH!}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_1.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_2.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_3.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_4.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_5.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_6.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_7.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_8.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_9.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_10.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_11.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{Figure_12.eps}\end{figure}
+\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=.45\textheight,width=1\textwidth]{simdiag.eps}\\\caption{Simulink Diagram}\end{figure}

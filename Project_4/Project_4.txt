@@ -1,0 +1,48 @@
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 1}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Trim_Simulation.eps}
+ \caption{Trim Simulation Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 1}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Trim_Simulation_Quaternion_Model.eps}
+ \caption{Trim Simulation Quaternion Model Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 2}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Elevator_Input_Simulation.eps}
+ \caption{Elevator Input Simulation Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 2}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Elevator_Input_Simulation_Quaternion_Model.eps}
+ \caption{Elevator Input Simulation Quaternion Model Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 3}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Aileron_Input_Simulation.eps}
+ \caption{Aileron Input Simulation Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 3}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Aileron_Input_Simulation_Derivative.eps}
+ \caption{Aileron Input Simulation Derivative Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 3}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Aileron_Input_Simulation_Quaternion_Model.eps}
+ \caption{Aileron Input Simulation Quaternion Model Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 4}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Rudder_Input_Simulation.eps}
+ \caption{Rudder Input Simulation Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 4}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Rudder_Input_Simulation_Quaternion_Model.eps}
+ \caption{Rudder Input Simulation Quaternion Model Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} Subsystem1}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Subsystem1.eps}
+ \caption{Simulink Diagram}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} dimaerocoeffs}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{dimaerocoeffs.eps}
+ \caption{Simulink Diagram}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 4\hspace*{\fill} Clair Cunningham \hspace*{\fill} Project\_4\_s}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Project_4_s.eps}
+ \caption{Simulink Diagram}\end{figure}\vspace*{\fill}
+\newpage

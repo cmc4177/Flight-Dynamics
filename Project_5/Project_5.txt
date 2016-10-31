@@ -1,0 +1,36 @@
+\sectionmark{Project \# 5\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 1}
+\begin{equation}\begin{bmatrix}\dot{V_T}\\ \dot{\alpha} \\ \dot{q} \\ \dot{\theta} \end{bmatrix}=
+\begin{bmatrix}-0.0131 & -4.52 & -0.188 & -32.2 \\ -0.000162 & -0.846 & 0.995 & 0 \\ -3.77e-11 & -3.32 & -0.793 & 0 \\ 0 & 0 & 1 & 0 \end{bmatrix}
+\begin{bmatrix}V_T\\ \alpha \\ q \\ \theta \end{bmatrix}+
+\begin{bmatrix}3.89 \\ -0.129 \\ -9.19 \\ 0\end{bmatrix}\begin{bmatrix} \delta e\end{bmatrix}\end{equation}\\The short period eigenvalues are -0.00561 and -0.00561, natural frequencies 0.0661 and 0.0661, damping ratios 0.0849 and 0.0849. \\ 
+The phugoid eigenvalues are -0.82 and -0.82, natural frequencies 1.99 and 1.99, damping ratios 0.411 and 0.411. 
+The system is stable because the eigenvalues are all negative.\\ 
+The pitch rate transfer function is: \begin{equation}\frac{q(s)}{\delta e(s)} = \frac{0 s^4 + -527 s^3 + -428 s^2 + -5.02 s + 5.68e-17}{1 s^4 + 1.65 s^3 + 4 s^2 + 0.0518 s + 0.0174}\end{equation}The angle of attack transfer function is: \begin{equation}\frac{\alpha(s)}{\delta e(s)} = \frac{0 s^4 + -7.39 s^3 + -530 s^2 + -7.01 s + -2.75}{1 s^4 + 1.65 s^3 + 4 s^2 + 0.0518 s + 0.0174}\end{equation}\sectionmark{Project \# 5\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 1}
+
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=1\textheight,width=1\textwidth,angle=90]{Elevator_Input_Simulation.eps}
+ \caption{Elevator Input Simulation Graphical Solution}\end{figure}\vspace*{\fill}
+\newpage
+\sectionmark{Project \# 5\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 2}
+\begin{equation}\begin{bmatrix}\dot{\beta}\\ \dot{p} \\ \dot{r} \\ \dot{\phi} \end{bmatrix}=
+\begin{bmatrix}-0.232 & 0.0633 & -0.996 & 0.0512 \\ -29.5 & -3.02 & 0.0201 & 0 \\ 6.23 & -0.0274 & -0.417 & 0 \\ 0 & 1 & 0.0631 & 0 \end{bmatrix}
+\begin{bmatrix}V_T\\ \alpha \\ q \\ \theta \end{bmatrix}+
+\begin{bmatrix}0.00521 & 0.031 \\ -36.5 & 8.11 \\ -0.492 & -2.83 \\ 0 & 0\end{bmatrix}\begin{bmatrix} \delta a \\ \delta r \end{bmatrix}\end{equation}The dutch roll mode eigenvalues are -0.408 and -0.408, natural frequencies 2.78 and 2.78, damping ratios 0.147 and 0.147.
+The roll mode eigenvalue is -2.82, and time constant 0.354. 
+The spiral mode eigenvalue is -0.0257, and time constant 39. 
+The system is stable because the eigenvalues are all negative. \\ 
+\sectionmark{Project \# 5\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 2}
+
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=0.99\textheight,width=1\textwidth,angle=90]{Aileron_Input_Simulation.eps}
+ \caption{Aileron Input Simulation Graphical Solution}\end{figure}\vspace*{\fill}
+\sectionmark{Project \# 5\hspace*{\fill} Clair Cunningham \hspace*{\fill} Problem 3}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=0.99\textheight,width=1\textwidth,angle=90]{Rudder_Input_Simulation.eps}
+ \caption{Rudder Input Simulation Graphical Solution}\end{figure}\vspace*{\fill}
+\sectionmark{Project \# 5\hspace*{\fill} Clair Cunningham \hspace*{\fill} Project\_5\_s\_7\_5}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=0.99\textheight,width=1\textwidth,angle=90]{Project_5_s_7_5.eps}
+ \caption{Simulink Diagram}\end{figure}\vspace*{\fill}
+\sectionmark{Project \# 5\hspace*{\fill} Clair Cunningham \hspace*{\fill} dimaerocoeffs}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=0.99\textheight,width=1\textwidth,angle=90]{dimaerocoeffs.eps}
+ \caption{Simulink Diagram}\end{figure}\vspace*{\fill}
+\sectionmark{Project \# 5\hspace*{\fill} Clair Cunningham \hspace*{\fill} Project\_5\_lin\_s\_7\_5}
+\vspace*{\fill}\begin{figure}[H]\centering\includegraphics[keepaspectratio=true,height=0.99\textheight,width=1\textwidth,angle=90]{Project_5_lin_s_7_5.eps}
+ \caption{Simulink Diagram}\end{figure}\vspace*{\fill}

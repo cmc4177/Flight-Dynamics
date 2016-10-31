@@ -1,0 +1,10 @@
+The transfer functions of the system are\\
+\\ $\dfrac{0.25s^2+0.25s+2.5}{1s^2+1s+6}$, $\dfrac{0.1s^2+1.1s+0.6}{1s^2+1s+6}$, $\dfrac{0s^2+1s+2}{1s^2+1s+6}$, and $\dfrac{2s^2+3s+6}{1s^2+1s+6}$.\hspace*{\fill} \circled{a}\\
+\\
+The eigenvalues of the system are -0.5+2.3979i, and -0.5-2.3979i.\hspace*{\fill} \circled{b}\\
+ The natural frequencies of the system are 2.449, and 2.449.\hspace*{\fill} \circled{b}\\
+ The damping ratios of the system are 0.2041, 0.2041.\hspace*{\fill} \circled{b}\\
+The 1st poles (-0.5+2.3979i,-0.5-2.3979i) are the same as the 2nd poles (-0.5+2.3979i,-0.5-2.3979i).\\
+The 1st poles (-0.5+2.3979i,-0.5-2.3979i) are the same as the 3rd poles (-0.5+2.3979i,-0.5-2.3979i).\\
+The 1st poles (-0.5+2.3979i,-0.5-2.3979i) are the same as the 4th poles (-0.5+2.3979i,-0.5-2.3979i).\\
+The transfer function poles (-0.5+2.3979i,-0.5-2.3979i) are the same as the eigenvalues (-0.5+2.3979i,-0.5-2.3979i).\hspace*{\fill} \circled{c}\\
